@@ -28,10 +28,19 @@ namespace CsharpYuzBir
             //sonuc = sayi1 + sayi2;
             //Console.Write(sonuc);
 
-            string sehir;
-            Console.Write("Lütfen şehri giriniz: ");
-            sehir = Console.ReadLine();
-            Console.Write(sehir);
+            //string sehir;
+            //Console.Write("Lütfen şehri giriniz: ");
+            //sehir = Console.ReadLine();
+            //Console.Write(sehir);
+
+            string ograd, ogrsoyad, numara;
+            Console.Write("Adınız: ");
+            ograd = Console.ReadLine();
+            Console.Write("Soyadınız: ");
+            ogrsoyad = Console.ReadLine();
+            Console.Write("Numara: ");
+            numara = Console.ReadLine();
+            Console.Write("Öğrenci Bilgileri: " + ograd + " " + ogrsoyad + " " + numara);
 
             Console.Read();
         }
