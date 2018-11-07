@@ -243,11 +243,22 @@ namespace CsharpYuzBir
             //    default: Console.Write("Bilinmeyen İşlem"); break;
             //}
 
-            string[] kisiler = { "Ali", "Ahmet", "Ayşe", "Aslı", "Cenk" };
-            for (int i = 0; i < kisiler.Length; i++)
+            //string[] kisiler = { "Ali", "Ahmet", "Ayşe", "Aslı", "Cenk" };
+            //for (int i = 0; i < kisiler.Length; i++)
+            //{
+            //    Console.WriteLine(kisiler[i]);
+            //}
+
+            int[] tamsayilar = { 4, 7, 36, 98, 21, 66, 10, 52, 31, 85 };
+            int toplam = 0;
+            for (int i = 0; i < tamsayilar.Length; i++)
             {
-                Console.WriteLine(kisiler[i]);
+                if (tamsayilar[i] % 2 == 0)
+                {
+                    toplam = toplam + tamsayilar[i];
+                }
             }
+            Console.WriteLine(toplam);
 
             Console.Read();
         }
