@@ -87,21 +87,37 @@ namespace CsharpYuzBir
             // Soru: Klavyeden iki not girildiğinde ikisinin ortalamasını hesaplayıp
             // 50'den büyük ve eşitse geçti, küçükse kaldı yazdıran kodu yazınız.
 
-            int not1, not2, ortalama;
-            Console.Write("Sınav 1: ");
-            not1 = Convert.ToInt16(Console.ReadLine());
-            Console.Write("Sınav 2: ");
-            not2 = Convert.ToInt16(Console.ReadLine());
-            ortalama = (not1 + not2) / 2;
-            Console.Write("Ortalamanız: " + ortalama);
-            if (ortalama >= 50)
+            //int not1, not2, ortalama;
+            //Console.Write("Sınav 1: ");
+            //not1 = Convert.ToInt16(Console.ReadLine());
+            //Console.Write("Sınav 2: ");
+            //not2 = Convert.ToInt16(Console.ReadLine());
+            //ortalama = (not1 + not2) / 2;
+            //Console.Write("Ortalamanız: " + ortalama);
+            //if (ortalama >= 50)
+            //{
+            //    Console.Write(" Geçtiniz");
+            //}
+            //else
+            //{
+            //    Console.Write(" Kaldınız");
+            //}
+
+            Console.Write("Sicaklığı giriniz: ");
+            int sicaklik = Convert.ToInt16(Console.ReadLine());
+            if (sicaklik <= 0)
             {
-                Console.Write(" Geçtiniz");
+                Console.Write("Katı");
             }
-            else
+            if (sicaklik > 0 && sicaklik < 100)
             {
-                Console.Write(" Kaldınız");
+                Console.Write("Sıvı");
             }
+            if (sicaklik >= 100)
+            {
+                Console.Write("Gaz");
+            }
+
 
 
             Console.Read();
