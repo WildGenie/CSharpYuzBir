@@ -195,13 +195,22 @@ namespace CsharpYuzBir
             //}
             //Console.WriteLine(sayi);
 
-            int sayi = 1;
-            do
+            //int sayi = 1;
+            //do
+            //{
+            //    Console.WriteLine(sayi);
+            //    sayi++;
+            //}
+            //while (sayi <= 10);
+
+            for (int i = 1; i <= 5; i++)
             {
-                Console.WriteLine(sayi);
-                sayi++;
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
             }
-            while (sayi <= 10);
 
             Console.Read();
         }
