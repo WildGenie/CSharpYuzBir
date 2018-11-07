@@ -147,13 +147,21 @@ namespace CsharpYuzBir
             //    Console.WriteLine(i);
             //}
 
-            for (int i = 1; i <= 100; i++)
+            //for (int i = 1; i <= 100; i++)
+            //{
+            //    if (i % 5 == 0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+
+            int toplam = 0;
+            for (int i = 1; i <= 10; i++)
             {
-                if (i % 5 == 0)
-                {
-                    Console.WriteLine(i);
-                }
+                toplam = toplam + i;
             }
+            Console.WriteLine(toplam);
+
 
             Console.Read();
         }
