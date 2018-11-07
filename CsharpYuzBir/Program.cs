@@ -185,15 +185,23 @@ namespace CsharpYuzBir
             //    Console.WriteLine(c);
             //}
 
+            //int sayi = 1;
+            //int toplam = 0;
+            //while (sayi <= 10)
+            //{
+            //    //Console.WriteLine(sayi);
+            //    toplam = toplam + sayi;
+            //    sayi++;
+            //}
+            //Console.WriteLine(sayi);
+
             int sayi = 1;
-            int toplam = 0;
-            while (sayi <= 10)
+            do
             {
-                //Console.WriteLine(sayi);
-                toplam = toplam + sayi;
+                Console.WriteLine(sayi);
                 sayi++;
             }
-            Console.WriteLine(sayi);
+            while (sayi <= 10);
 
             Console.Read();
         }
