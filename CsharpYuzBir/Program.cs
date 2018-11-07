@@ -167,12 +167,23 @@ namespace CsharpYuzBir
             // ikiye bölünerek artıyorlar. Buna göre 24 saatin sonunda
             // bu ortamda kaç tane bakteri olur.
 
-            int bakteri = 1;
-            for (int i = 1; i <= 24; i++)
+            //int bakteri = 1;
+            //for (int i = 1; i <= 24; i++)
+            //{
+            //    bakteri = bakteri * 2;
+            //}
+            //Console.WriteLine(bakteri);
+
+            int a = 1, b = 1, c;
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+            for (int i = 1; i <= 8; i++)
             {
-                bakteri = bakteri * 2;
+                c = a + b;
+                a = b;
+                b = c;
+                Console.WriteLine(c);
             }
-            Console.WriteLine(bakteri);
 
             Console.Read();
         }
