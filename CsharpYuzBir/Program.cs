@@ -22,11 +22,16 @@ namespace CsharpYuzBir
             //int sayi = 24;
             //Console.Write(sayi);
 
-            int sayi1, sayi2, sonuc;
-            sayi1 = 20;
-            sayi2 = 30;
-            sonuc = sayi1 + sayi2;
-            Console.Write(sonuc);
+            //int sayi1, sayi2, sonuc;
+            //sayi1 = 20;
+            //sayi2 = 30;
+            //sonuc = sayi1 + sayi2;
+            //Console.Write(sonuc);
+
+            string sehir;
+            Console.Write("Lütfen şehri giriniz: ");
+            sehir = Console.ReadLine();
+            Console.Write(sehir);
 
             Console.Read();
         }
