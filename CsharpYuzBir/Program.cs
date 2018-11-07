@@ -10,6 +10,11 @@ namespace CsharpYuzBir
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Kitap Ad: Çalıkuşu");
+            Console.WriteLine("Yazar: Reşat Nuri");
+            Console.WriteLine("Tür: Roman");
+
+            Console.Read();
         }
     }
 }
