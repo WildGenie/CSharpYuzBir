@@ -33,14 +33,22 @@ namespace CsharpYuzBir
             //sehir = Console.ReadLine();
             //Console.Write(sehir);
 
-            string ograd, ogrsoyad, numara;
-            Console.Write("Adınız: ");
-            ograd = Console.ReadLine();
-            Console.Write("Soyadınız: ");
-            ogrsoyad = Console.ReadLine();
-            Console.Write("Numara: ");
-            numara = Console.ReadLine();
-            Console.Write("Öğrenci Bilgileri: " + ograd + " " + ogrsoyad + " " + numara);
+            //string ograd, ogrsoyad, numara;
+            //Console.Write("Adınız: ");
+            //ograd = Console.ReadLine();
+            //Console.Write("Soyadınız: ");
+            //ogrsoyad = Console.ReadLine();
+            //Console.Write("Numara: ");
+            //numara = Console.ReadLine();
+            //Console.Write("Öğrenci Bilgileri: " + ograd + " " + ogrsoyad + " " + numara);
+
+            int sayi1, sayi2, toplam;
+            Console.Write("Sayı 1: ");
+            sayi1 = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Sayı 2: ");
+            sayi2 = Convert.ToInt16(Console.ReadLine());
+            toplam = sayi1 * sayi2;
+            Console.Write(toplam);
 
             Console.Read();
         }
