@@ -174,16 +174,26 @@ namespace CsharpYuzBir
             //}
             //Console.WriteLine(bakteri);
 
-            int a = 1, b = 1, c;
-            Console.WriteLine(a);
-            Console.WriteLine(b);
-            for (int i = 1; i <= 8; i++)
+            //int a = 1, b = 1, c;
+            //Console.WriteLine(a);
+            //Console.WriteLine(b);
+            //for (int i = 1; i <= 8; i++)
+            //{
+            //    c = a + b;
+            //    a = b;
+            //    b = c;
+            //    Console.WriteLine(c);
+            //}
+
+            int sayi = 1;
+            int toplam = 0;
+            while (sayi <= 10)
             {
-                c = a + b;
-                a = b;
-                b = c;
-                Console.WriteLine(c);
+                //Console.WriteLine(sayi);
+                toplam = toplam + sayi;
+                sayi++;
             }
+            Console.WriteLine(sayi);
 
             Console.Read();
         }
