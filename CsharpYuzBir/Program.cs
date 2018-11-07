@@ -142,9 +142,17 @@ namespace CsharpYuzBir
             //    Console.Write(tutar);
             //}
 
-            for (int i = 1; i <= 10; i++)
+            //for (int i = 1; i <= 10; i++)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            for (int i = 1; i <= 100; i++)
             {
-                Console.WriteLine(i);
+                if (i % 5 == 0)
+                {
+                    Console.WriteLine(i);
+                }
             }
 
             Console.Read();
