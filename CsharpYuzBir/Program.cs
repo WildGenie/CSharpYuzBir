@@ -47,7 +47,7 @@ namespace CsharpYuzBir
             //sayi1 = Convert.ToInt16(Console.ReadLine());
             //Console.Write("Sayı 2: ");
             //sayi2 = Convert.ToInt16(Console.ReadLine());
-            //toplam = sayi1 * sayi2;
+            //toplam = sayi1 + sayi2;
             //Console.Write(toplam);
 
             //Console.Write("Şifreniz: ");
@@ -76,13 +76,33 @@ namespace CsharpYuzBir
             // Soru: Klavyeden girilen 3 basamaklı sayının 
             // basamakları toplamını hesaplayan kodu yazınız.
 
-            Console.Write("Üç Basamaklı Bir Sayı Giriniz: ");
-            int sayi = Convert.ToInt16(Console.ReadLine());
-            int birler = sayi % 10;
-            int onlar = (sayi / 10) % 10;
-            int yuzler = (sayi / 100) % 10;
-            int sayilartoplami = birler + onlar + yuzler;
-            Console.Write("Rakamlar Toplami: " + sayilartoplami);
+            //Console.Write("Üç Basamaklı Bir Sayı Giriniz: ");
+            //int sayi = Convert.ToInt16(Console.ReadLine());
+            //int birler = sayi % 10;
+            //int onlar = (sayi / 10) % 10;
+            //int yuzler = (sayi / 100) % 10;
+            //int sayilartoplami = birler + onlar + yuzler;
+            //Console.Write("Rakamlar Toplami: " + sayilartoplami);
+
+            // Soru: Klavyeden iki not girildiğinde ikisinin ortalamasını hesaplayıp
+            // 50'den büyük ve eşitse geçti, küçükse kaldı yazdıran kodu yazınız.
+
+            int not1, not2, ortalama;
+            Console.Write("Sınav 1: ");
+            not1 = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Sınav 2: ");
+            not2 = Convert.ToInt16(Console.ReadLine());
+            ortalama = (not1 + not2) / 2;
+            Console.Write("Ortalamanız: " + ortalama);
+            if (ortalama >= 50)
+            {
+                Console.Write(" Geçtiniz");
+            }
+            else
+            {
+                Console.Write(" Kaldınız");
+            }
+
 
             Console.Read();
         }
