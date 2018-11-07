@@ -122,24 +122,29 @@ namespace CsharpYuzBir
             //// 21 ile 40 arasında %20
             //// 40 ve üstü %30 indirim
 
-            int kitap;
-            double tutar;
-            Console.Write("Alınan kitap sayısını giriniz: ");
-            kitap = Convert.ToInt16(Console.ReadLine());
-            if (kitap >= 1 && kitap <= 20)
+            //int kitap;
+            //double tutar;
+            //Console.Write("Alınan kitap sayısını giriniz: ");
+            //kitap = Convert.ToInt16(Console.ReadLine());
+            //if (kitap >= 1 && kitap <= 20)
+            //{
+            //    tutar = (kitap * 8) - (kitap * 8 * 0.1);
+            //    Console.Write(tutar);
+            //}
+            //if (kitap >= 21 && kitap <= 40)
+            //{
+            //    tutar = (kitap * 8) - (kitap * 8 * 0.2);
+            //    Console.Write(tutar);
+            //}
+            //if (kitap >= 41)
+            //{
+            //    tutar = (kitap * 8) - (kitap * 8 * 0.3);
+            //    Console.Write(tutar);
+            //}
+
+            for (int i = 1; i <= 10; i++)
             {
-                tutar = (kitap * 8) - (kitap * 8 * 0.1);
-                Console.Write(tutar);
-            }
-            if (kitap >= 21 && kitap <= 40)
-            {
-                tutar = (kitap * 8) - (kitap * 8 * 0.2);
-                Console.Write(tutar);
-            }
-            if (kitap >= 41)
-            {
-                tutar = (kitap * 8) - (kitap * 8 * 0.3);
-                Console.Write(tutar);
+                Console.WriteLine(i);
             }
 
             Console.Read();
