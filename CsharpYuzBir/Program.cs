@@ -226,21 +226,27 @@ namespace CsharpYuzBir
             //    default: Console.Write("Henüz eklenmemiş plaka..."); break;
             //}
 
-            int sayi1, sayi2;
-            char islem;
-            Console.Write("Sayı 1: ");
-            sayi1 = Convert.ToInt16(Console.ReadLine());
-            Console.Write("Sayı 2: ");
-            sayi2 = Convert.ToInt16(Console.ReadLine());
-            Console.Write("İşlem türünü seçiniz (+, -, *, /): ");
-            islem =Convert.ToChar(Console.ReadLine());
-            switch (islem)
+            //int sayi1, sayi2;
+            //char islem;
+            //Console.Write("Sayı 1: ");
+            //sayi1 = Convert.ToInt16(Console.ReadLine());
+            //Console.Write("Sayı 2: ");
+            //sayi2 = Convert.ToInt16(Console.ReadLine());
+            //Console.Write("İşlem türünü seçiniz (+, -, *, /): ");
+            //islem =Convert.ToChar(Console.ReadLine());
+            //switch (islem)
+            //{
+            //    case '+': Console.Write(sayi1 + sayi2); break;
+            //    case '-': Console.Write(sayi1 - sayi2); break;
+            //    case '/': Console.Write(sayi1 / sayi2); break;
+            //    case '*': Console.Write(sayi1 * sayi2); break;
+            //    default: Console.Write("Bilinmeyen İşlem"); break;
+            //}
+
+            string[] kisiler = { "Ali", "Ahmet", "Ayşe", "Aslı", "Cenk" };
+            for (int i = 0; i < kisiler.Length; i++)
             {
-                case '+': Console.Write(sayi1 + sayi2); break;
-                case '-': Console.Write(sayi1 - sayi2); break;
-                case '/': Console.Write(sayi1 / sayi2); break;
-                case '*': Console.Write(sayi1 * sayi2); break;
-                default: Console.Write("Bilinmeyen İşlem"); break;
+                Console.WriteLine(kisiler[i]);
             }
 
             Console.Read();
