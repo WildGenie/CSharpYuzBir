@@ -249,16 +249,20 @@ namespace CsharpYuzBir
             //    Console.WriteLine(kisiler[i]);
             //}
 
-            int[] tamsayilar = { 4, 7, 36, 98, 21, 66, 10, 52, 31, 85 };
-            int toplam = 0;
-            for (int i = 0; i < tamsayilar.Length; i++)
-            {
-                if (tamsayilar[i] % 2 == 0)
-                {
-                    toplam = toplam + tamsayilar[i];
-                }
-            }
-            Console.WriteLine(toplam);
+            //int[] tamsayilar = { 4, 7, 36, 98, 21, 66, 10, 52, 31, 85 };
+            //int toplam = 0;
+            //for (int i = 0; i < tamsayilar.Length; i++)
+            //{
+            //    if (tamsayilar[i] % 2 == 0)
+            //    {
+            //        toplam = toplam + tamsayilar[i];
+            //    }
+            //}
+            //Console.WriteLine(toplam);
+
+            Random rnd = new Random();
+            int sayi = rnd.Next(1, 501);
+            Console.WriteLine(sayi);
 
             Console.Read();
         }
