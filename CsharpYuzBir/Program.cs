@@ -61,6 +61,18 @@ namespace CsharpYuzBir
                 Console.Write("Hatalı Giriş");
             }
 
+            // Mod Alma %
+            Console.Write("Sayıyı Giriniz: ");
+            int sayi = Convert.ToInt16(Console.ReadLine());
+            if (sayi % 2 == 0)
+            {
+                Console.Write("Çift");
+            }
+            else
+            {
+                Console.Write("Tek");
+            }
+
             Console.Read();
         }
     }
