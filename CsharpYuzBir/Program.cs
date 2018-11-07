@@ -203,13 +203,30 @@ namespace CsharpYuzBir
             //}
             //while (sayi <= 10);
 
-            for (int i = 1; i <= 5; i++)
+            //for (int i = 1; i <= 5; i++)
+            //{
+            //    for (int j = 1; j <= i; j++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.Clear();
+
+            Console.Write("Plaka Değeri: ");
+            string plaka = Console.ReadLine();
+
+            switch (plaka)
             {
-                for (int j = 1; j <= i; j++)
-                {
-                    Console.Write("*");
-                }
-                Console.WriteLine();
+                case "1": Console.Write("Adana"); break;
+                case "2": Console.Write("Adıyaman"); break;
+                case "3": Console.Write("Afyon"); break;
+                case "4": Console.Write("Ağrı"); break;
+                case "5": Console.Write("Amasya"); break;
+                case "6": Console.Write("Ankara"); break;
+                default: Console.Write("Henüz eklenmemiş plaka..."); break;
             }
 
             Console.Read();
