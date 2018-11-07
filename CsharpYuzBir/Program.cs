@@ -50,28 +50,39 @@ namespace CsharpYuzBir
             //toplam = sayi1 * sayi2;
             //Console.Write(toplam);
 
-            Console.Write("Şifreniz: ");
-            string sifre = Console.ReadLine();
-            if (sifre == "1234")
-            {
-                Console.Write("Giriş Başarılı");
-            }
-            else
-            {
-                Console.Write("Hatalı Giriş");
-            }
+            //Console.Write("Şifreniz: ");
+            //string sifre = Console.ReadLine();
+            //if (sifre == "1234")
+            //{
+            //    Console.Write("Giriş Başarılı");
+            //}
+            //else
+            //{
+            //    Console.Write("Hatalı Giriş");
+            //}
 
             // Mod Alma %
-            Console.Write("Sayıyı Giriniz: ");
+            //Console.Write("Sayıyı Giriniz: ");
+            //int sayi = Convert.ToInt16(Console.ReadLine());
+            //if (sayi % 2 == 0)
+            //{
+            //    Console.Write("Çift");
+            //}
+            //else
+            //{
+            //    Console.Write("Tek");
+            //}
+
+            // Soru: Klavyeden girilen 3 basamaklı sayının 
+            // basamakları toplamını hesaplayan kodu yazınız.
+
+            Console.Write("Üç Basamaklı Bir Sayı Giriniz: ");
             int sayi = Convert.ToInt16(Console.ReadLine());
-            if (sayi % 2 == 0)
-            {
-                Console.Write("Çift");
-            }
-            else
-            {
-                Console.Write("Tek");
-            }
+            int birler = sayi % 10;
+            int onlar = (sayi / 10) % 10;
+            int yuzler = (sayi / 100) % 10;
+            int sayilartoplami = birler + onlar + yuzler;
+            Console.Write("Rakamlar Toplami: " + sayilartoplami);
 
             Console.Read();
         }
