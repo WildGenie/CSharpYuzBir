@@ -61,7 +61,7 @@ namespace CsharpYuzBir
             //    Console.Write("Hatalı Giriş");
             //}
 
-            // Mod Alma %
+            //// Mod Alma %
             //Console.Write("Sayıyı Giriniz: ");
             //int sayi = Convert.ToInt16(Console.ReadLine());
             //if (sayi % 2 == 0)
@@ -73,8 +73,8 @@ namespace CsharpYuzBir
             //    Console.Write("Tek");
             //}
 
-            // Soru: Klavyeden girilen 3 basamaklı sayının 
-            // basamakları toplamını hesaplayan kodu yazınız.
+            //// Soru: Klavyeden girilen 3 basamaklı sayının 
+            //// basamakları toplamını hesaplayan kodu yazınız.
 
             //Console.Write("Üç Basamaklı Bir Sayı Giriniz: ");
             //int sayi = Convert.ToInt16(Console.ReadLine());
@@ -84,8 +84,8 @@ namespace CsharpYuzBir
             //int sayilartoplami = birler + onlar + yuzler;
             //Console.Write("Rakamlar Toplami: " + sayilartoplami);
 
-            // Soru: Klavyeden iki not girildiğinde ikisinin ortalamasını hesaplayıp
-            // 50'den büyük ve eşitse geçti, küçükse kaldı yazdıran kodu yazınız.
+            //// Soru: Klavyeden iki not girildiğinde ikisinin ortalamasını hesaplayıp
+            //// 50'den büyük ve eşitse geçti, küçükse kaldı yazdıran kodu yazınız.
 
             //int not1, not2, ortalama;
             //Console.Write("Sınav 1: ");
@@ -103,22 +103,44 @@ namespace CsharpYuzBir
             //    Console.Write(" Kaldınız");
             //}
 
-            Console.Write("Sicaklığı giriniz: ");
-            int sicaklik = Convert.ToInt16(Console.ReadLine());
-            if (sicaklik <= 0)
-            {
-                Console.Write("Katı");
-            }
-            if (sicaklik > 0 && sicaklik < 100)
-            {
-                Console.Write("Sıvı");
-            }
-            if (sicaklik >= 100)
-            {
-                Console.Write("Gaz");
-            }
+            //Console.Write("Sicaklığı giriniz: ");
+            //int sicaklik = Convert.ToInt16(Console.ReadLine());
+            //if (sicaklik <= 0)
+            //{
+            //    Console.Write("Katı");
+            //}
+            //if (sicaklik > 0 && sicaklik < 100)
+            //{
+            //    Console.Write("Sıvı");
+            //}
+            //if (sicaklik >= 100)
+            //{
+            //    Console.Write("Gaz");
+            //}
 
+            //// 1 ile 20 arasında %10
+            //// 21 ile 40 arasında %20
+            //// 40 ve üstü %30 indirim
 
+            int kitap;
+            double tutar;
+            Console.Write("Alınan kitap sayısını giriniz: ");
+            kitap = Convert.ToInt16(Console.ReadLine());
+            if (kitap >= 1 && kitap <= 20)
+            {
+                tutar = (kitap * 8) - (kitap * 8 * 0.1);
+                Console.Write(tutar);
+            }
+            if (kitap >= 21 && kitap <= 40)
+            {
+                tutar = (kitap * 8) - (kitap * 8 * 0.2);
+                Console.Write(tutar);
+            }
+            if (kitap >= 41)
+            {
+                tutar = (kitap * 8) - (kitap * 8 * 0.3);
+                Console.Write(tutar);
+            }
 
             Console.Read();
         }
