@@ -155,13 +155,24 @@ namespace CsharpYuzBir
             //    }
             //}
 
-            int toplam = 0;
-            for (int i = 1; i <= 10; i++)
-            {
-                toplam = toplam + i;
-            }
-            Console.WriteLine(toplam);
+            //int toplam = 0;
+            //for (int i = 1; i <= 10; i++)
+            //{
+            //    toplam = toplam + i;
+            //}
+            //Console.WriteLine(toplam);
 
+            // Soru: bir bakteri türü her saatin sonunda kendini 2'ye bölerek
+            // çoğalmaktadır. Yeni oluşan bakteriler de aynı şekilde
+            // ikiye bölünerek artıyorlar. Buna göre 24 saatin sonunda
+            // bu ortamda kaç tane bakteri olur.
+
+            int bakteri = 1;
+            for (int i = 1; i <= 24; i++)
+            {
+                bakteri = bakteri * 2;
+            }
+            Console.WriteLine(bakteri);
 
             Console.Read();
         }
