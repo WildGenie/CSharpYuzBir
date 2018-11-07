@@ -42,13 +42,24 @@ namespace CsharpYuzBir
             //numara = Console.ReadLine();
             //Console.Write("Öğrenci Bilgileri: " + ograd + " " + ogrsoyad + " " + numara);
 
-            int sayi1, sayi2, toplam;
-            Console.Write("Sayı 1: ");
-            sayi1 = Convert.ToInt16(Console.ReadLine());
-            Console.Write("Sayı 2: ");
-            sayi2 = Convert.ToInt16(Console.ReadLine());
-            toplam = sayi1 * sayi2;
-            Console.Write(toplam);
+            //int sayi1, sayi2, toplam;
+            //Console.Write("Sayı 1: ");
+            //sayi1 = Convert.ToInt16(Console.ReadLine());
+            //Console.Write("Sayı 2: ");
+            //sayi2 = Convert.ToInt16(Console.ReadLine());
+            //toplam = sayi1 * sayi2;
+            //Console.Write(toplam);
+
+            Console.Write("Şifreniz: ");
+            string sifre = Console.ReadLine();
+            if (sifre == "1234")
+            {
+                Console.Write("Giriş Başarılı");
+            }
+            else
+            {
+                Console.Write("Hatalı Giriş");
+            }
 
             Console.Read();
         }
