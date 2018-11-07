@@ -212,21 +212,35 @@ namespace CsharpYuzBir
             //    Console.WriteLine();
             //}
 
-            Console.BackgroundColor = ConsoleColor.Blue;
-            Console.Clear();
+            //Console.Write("Plaka Değeri: ");
+            //string plaka = Console.ReadLine();
 
-            Console.Write("Plaka Değeri: ");
-            string plaka = Console.ReadLine();
+            //switch (plaka)
+            //{
+            //    case "1": Console.Write("Adana"); break;
+            //    case "2": Console.Write("Adıyaman"); break;
+            //    case "3": Console.Write("Afyon"); break;
+            //    case "4": Console.Write("Ağrı"); break;
+            //    case "5": Console.Write("Amasya"); break;
+            //    case "6": Console.Write("Ankara"); break;
+            //    default: Console.Write("Henüz eklenmemiş plaka..."); break;
+            //}
 
-            switch (plaka)
+            int sayi1, sayi2;
+            char islem;
+            Console.Write("Sayı 1: ");
+            sayi1 = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Sayı 2: ");
+            sayi2 = Convert.ToInt16(Console.ReadLine());
+            Console.Write("İşlem türünü seçiniz (+, -, *, /): ");
+            islem =Convert.ToChar(Console.ReadLine());
+            switch (islem)
             {
-                case "1": Console.Write("Adana"); break;
-                case "2": Console.Write("Adıyaman"); break;
-                case "3": Console.Write("Afyon"); break;
-                case "4": Console.Write("Ağrı"); break;
-                case "5": Console.Write("Amasya"); break;
-                case "6": Console.Write("Ankara"); break;
-                default: Console.Write("Henüz eklenmemiş plaka..."); break;
+                case '+': Console.Write(sayi1 + sayi2); break;
+                case '-': Console.Write(sayi1 - sayi2); break;
+                case '/': Console.Write(sayi1 / sayi2); break;
+                case '*': Console.Write(sayi1 * sayi2); break;
+                default: Console.Write("Bilinmeyen İşlem"); break;
             }
 
             Console.Read();
